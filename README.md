@@ -142,6 +142,12 @@ In the first week of the start of the project, I plan on implementing the sign u
 ### Networking
 * Homescreen: 
  * (Read/Get) for all the colleges that match the users inputs 
+ * (Read/Get) Like a college
+ * (Create/Post) a comment about a college
+* Search: 
+ * (Read/Get) a college based on a key word
+* News & updates: 
+ * (Read/Get) see news about a liked college 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as collegeAI API]
 * Getting information for a specific college **endpoint** -  /v1/api/college/info
