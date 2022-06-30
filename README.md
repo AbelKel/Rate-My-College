@@ -136,19 +136,52 @@ In the first week of the start of the project, I plan on implementing the sign u
 ## Schema 
 *
 ### Models
-|Property | Type | Description | 
-
+**User**
+- Properties: profile image, preferences such as location, tuition, major, and size, like count for a college, and comments made to a college.
 
 ### Networking
+* Login;
+  * making use of parse for the login screen
 * Homescreen: 
- * (Read/Get) for all the colleges that match the users inputs 
- * (Read/Get) Like a college
- * (Create/Post) a comment about a college
+  * (Read/Get) for all the colleges that match the users inputs 
+  * (Read/Get) Like a college
+  * (Create/Post) a comment about a college
 * Search: 
- * (Read/Get) a college based on a key word
+  * (Read/Get) a college based on a key word
 * News & updates: 
- * (Read/Get) see news about a liked college 
-- [Create basic snippets for each Parse network request]
+  * (Read/Get) see news about a liked college 
+
+*Login requesst through parse: 
+
+(void)loginUser {
+    NSString *username = self.usernameField.text;
+    NSString *password = self.passwordField.text;
+    
+    [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
+        if (error != nil) {
+            NSLog(@"User log in failed: %@", error.localizedDescription);
+        } else {
+            NSLog(@"User logged in successfully");
+        }
+    }];
+}
+
+* Sign up through parse: 
+(void)registerUser {
+    PFUser *newUser = [PFUser user];
+    
+    newUser.username = self.usernameField.text;
+    newUser.email = self.emailField.text;
+    newUser.password = self.passwordField.text;
+    [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
+        if (error != nil) {
+            NSLog(@"Error: %@", error.localizedDescription);
+        } else {
+            NSLog(@"User registered successfully");
+            
+        }
+    }];
+ }
 - [OPTIONAL: List endpoints if using existing API such as collegeAI API]
 * Getting information for a specific college **endpoint** -  /v1/api/college/info
 * Autocomplete for college search **endpoint** - /v1/api/autocomplete/colleges
