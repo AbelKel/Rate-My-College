@@ -16,6 +16,8 @@ One of the reasons I found this project appealing is that the college applicatio
 
 Rate My College is a college review and matching app for students applying to colleges. The first time a user launches the app, they will be prompted to complete a short survey in which they will answer a couple of questions to find a college they might be interested in. Afterwards, the user will be taken to a page where they can see their top 5/10 recommended choices.
 
+In the first week of the start of the project, I plan on implementing the sign up page/ login with Facebook page, the opening survey, and integration of the APIs and databases.
+
 ### App Evaluation
 - **Category:** Socail/Communication
 - **Mobile:** It is a mobile app that students can use to find a good fit college. They can use it to search, view details, and read about colleges.
@@ -90,6 +92,46 @@ Rate My College is a college review and matching app for students applying to co
 ![IMG_0022](https://user-images.githubusercontent.com/96321082/176711317-fd261023-f6e8-4144-a8ac-acce6737b299.jpg)
 
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+
+
+## Week 1: 
+  * Sign up page that that include a field for a username, password, and phone number 
+  * Implementing login page afterwards 
+  * A 4 question survey to determine a college match 
+  * After the survey, the user will be led to their profile which includes their top 5/10 matches 
+* How I intend to use the APIs in the first week 
+  * Filtering colleges depending on students’ answers in the initial survey 
+  * Create a details page for the matched colleges 
+  * Add a settings page for the user to adjust location, answers to their initial survey, and add their high school name.
+## Week 2: 
+* Create a home page with filters such as: 
+  * Best in terms of athlete life 
+  * Academic rigor 
+  * Proximity to current location 
+* Search for a college using a keyword
+* Like a college 
+* Rate academic rigor 
+## Week 3: 
+* Commenting under a specific college/Commenting about student athlete lifestyle 
+* Accessing the ranks of colleges in top 10, top 20
+* Find links to different colleges’ websites
+* Seeing photos of college campuses through details page
+* Submitting a review for a professor/class
+## Week 4: 
+* Adding a college (if it does not exist)
+* User follow a specific college for news or any updates
+* A tab/section for the user’s liked and following colleges 
+* Polish app UI 
+## Week 5: 
+* Additional features such as change language
+* Working on UI 
+## Week 6: 
+* Add more additional features 
+## Week 7: 
+* Presentations
+
+
 
 ## Schema 
 [This section will be completed in Unit 9]
