@@ -134,10 +134,18 @@ In the first week of the start of the project, I plan on implementing the sign u
 
 
 ## Schema 
-[This section will be completed in Unit 9]
+*
 ### Models
-[Add table of models]
+|Property | Type | Description | 
+
+
 ### Networking
-- [Add list of network requests by screen ]
+* Homescreen: 
+ * (Read/Get) for all the colleges that match the users inputs 
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- [OPTIONAL: List endpoints if using existing API such as collegeAI API]
+* Getting information for a specific college **endpoint** -  /v1/api/college/info
+* Autocomplete for college search **endpoint** - /v1/api/autocomplete/colleges
+* Parameter for getting information such as in state tuition, and student to faculty ratio.
+
+
